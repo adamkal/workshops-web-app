@@ -1,0 +1,27 @@
+<html>
+
+<body style="color: red; background-color: rgb(243, 168, 98);">
+
+    <h1 style="color: rgb(76, 76, 221);">Hello World!</h1>
+    {% if ksywa %}
+        <h2>Twoja {{ ksywa }} </h2>
+    {% endif %}
+    <div>
+    <form action="/formularz#2" method="post">
+        <input type="text" name="imie" />
+        <input type="text" name="not-used-param" />
+        <input type="submit" value="Sssslij">
+    </form>
+</div>
+<div>   
+    <form action="/formularz#1" method="post">
+        <input type="text" name="xxxx" />
+        <input type="submit" value="Sssslij">
+    </form>
+</div>
+    <ul>
+        <li>ziom: {{ ksywa }}</li>
+        <li>xxxx: {{ xxxx  }}</li>
+    </ul>
+</body>
+</html>
